@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Belleza', sans-serif;
+}
+
+#app .container {
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 960px) { #app .container { max-width: 900px; } }
+@media (min-width: 1264px) { #app .container { max-width: 1185px; } }
+@media (min-width: 1904px) { #app .container { max-width: 1585px; } }
+
+#app .container .row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+#app .container .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 960px) { #app .container .col-4 { 
+    flex: 0 0 50%;
+    max-width: 50%;
+}}
+@media (min-width: 1264px) { #app .container .col-4 { 
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}}
+@media (min-width: 1904px) { #app .container .col-4 { 
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}}
+
+button { transition: 0.2s ease-in-out; cursor: pointer;}
+
+button:hover { transform: scale(1.2); }
